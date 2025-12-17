@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA1247C02EEFCED40015AB85 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1247BF2EEFCED40015AB85 /* Quartz.framework */; };
+		FA1247CC2EEFCED40015AB85 /* qlspectrumPreview.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FA1247BD2EEFCED40015AB85 /* qlspectrumPreview.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA1247D62EEFD2580015AB85 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1247D52EEFD2580015AB85 /* Accelerate.framework */; };
+		FA1247D82EEFD2620015AB85 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1247D72EEFD2620015AB85 /* AVFoundation.framework */; };
+		FA1247DA2EEFD26A0015AB85 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1247D92EEFD26A0015AB85 /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FA1247992EEFCD5D0015AB85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +29,64 @@
 			remoteGlobalIDString = FA12478A2EEFCD5C0015AB85;
 			remoteInfo = qlspectrum;
 		};
+		FA1247CA2EEFCED40015AB85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA1247832EEFCD5C0015AB85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA1247BC2EEFCED40015AB85;
+			remoteInfo = qlspectrumPreview;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA1247D12EEFCED40015AB85 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FA1247CC2EEFCED40015AB85 /* qlspectrumPreview.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA12478B2EEFCD5C0015AB85 /* qlspectrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qlspectrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1247982EEFCD5D0015AB85 /* qlspectrumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlspectrumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1247A22EEFCD5D0015AB85 /* qlspectrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qlspectrumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1247BD2EEFCED40015AB85 /* qlspectrumPreview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = qlspectrumPreview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1247BF2EEFCED40015AB85 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		FA1247D52EEFD2580015AB85 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FA1247D72EEFD2620015AB85 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA1247D92EEFD26A0015AB85 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA1247CD2EEFCED40015AB85 /* Exceptions for "qlspectrumPreview" folder in "qlspectrumPreview" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FA1247BC2EEFCED40015AB85 /* qlspectrumPreview */;
+		};
+		FA1247D32EEFCF040015AB85 /* Exceptions for "qlspectrum" folder in "qlspectrumPreview" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AudioSpectrum.swift,
+				SpectrumView.swift,
+			);
+			target = FA1247BC2EEFCED40015AB85 /* qlspectrumPreview */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FA12478D2EEFCD5C0015AB85 /* qlspectrum */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA1247D32EEFCF040015AB85 /* Exceptions for "qlspectrum" folder in "qlspectrumPreview" target */,
+			);
 			path = qlspectrum;
 			sourceTree = "<group>";
 		};
@@ -45,6 +100,14 @@
 			path = qlspectrumUITests;
 			sourceTree = "<group>";
 		};
+		FA1247C12EEFCED40015AB85 /* qlspectrumPreview */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA1247CD2EEFCED40015AB85 /* Exceptions for "qlspectrumPreview" folder in "qlspectrumPreview" target */,
+			);
+			path = qlspectrumPreview;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +115,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1247DA2EEFD26A0015AB85 /* SwiftUI.framework in Frameworks */,
+				FA1247D82EEFD2620015AB85 /* AVFoundation.framework in Frameworks */,
+				FA1247D62EEFD2580015AB85 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +135,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA1247BA2EEFCED40015AB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1247C02EEFCED40015AB85 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +152,8 @@
 				FA12478D2EEFCD5C0015AB85 /* qlspectrum */,
 				FA12479B2EEFCD5D0015AB85 /* qlspectrumTests */,
 				FA1247A52EEFCD5D0015AB85 /* qlspectrumUITests */,
+				FA1247C12EEFCED40015AB85 /* qlspectrumPreview */,
+				FA1247BE2EEFCED40015AB85 /* Frameworks */,
 				FA12478C2EEFCD5C0015AB85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +164,20 @@
 				FA12478B2EEFCD5C0015AB85 /* qlspectrum.app */,
 				FA1247982EEFCD5D0015AB85 /* qlspectrumTests.xctest */,
 				FA1247A22EEFCD5D0015AB85 /* qlspectrumUITests.xctest */,
+				FA1247BD2EEFCED40015AB85 /* qlspectrumPreview.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FA1247BE2EEFCED40015AB85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1247D92EEFD26A0015AB85 /* SwiftUI.framework */,
+				FA1247D72EEFD2620015AB85 /* AVFoundation.framework */,
+				FA1247D52EEFD2580015AB85 /* Accelerate.framework */,
+				FA1247BF2EEFCED40015AB85 /* Quartz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +190,12 @@
 				FA1247872EEFCD5C0015AB85 /* Sources */,
 				FA1247882EEFCD5C0015AB85 /* Frameworks */,
 				FA1247892EEFCD5C0015AB85 /* Resources */,
+				FA1247D12EEFCED40015AB85 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FA1247CB2EEFCED40015AB85 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				FA12478D2EEFCD5C0015AB85 /* qlspectrum */,
@@ -163,6 +253,28 @@
 			productReference = FA1247A22EEFCD5D0015AB85 /* qlspectrumUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FA1247BC2EEFCED40015AB85 /* qlspectrumPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA1247CE2EEFCED40015AB85 /* Build configuration list for PBXNativeTarget "qlspectrumPreview" */;
+			buildPhases = (
+				FA1247B92EEFCED40015AB85 /* Sources */,
+				FA1247BA2EEFCED40015AB85 /* Frameworks */,
+				FA1247BB2EEFCED40015AB85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA1247C12EEFCED40015AB85 /* qlspectrumPreview */,
+			);
+			name = qlspectrumPreview;
+			packageProductDependencies = (
+			);
+			productName = qlspectrumPreview;
+			productReference = FA1247BD2EEFCED40015AB85 /* qlspectrumPreview.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +296,9 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = FA12478A2EEFCD5C0015AB85;
 					};
+					FA1247BC2EEFCED40015AB85 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
 				};
 			};
 			buildConfigurationList = FA1247862EEFCD5C0015AB85 /* Build configuration list for PBXProject "qlspectrum" */;
@@ -203,6 +318,7 @@
 				FA12478A2EEFCD5C0015AB85 /* qlspectrum */,
 				FA1247972EEFCD5D0015AB85 /* qlspectrumTests */,
 				FA1247A12EEFCD5D0015AB85 /* qlspectrumUITests */,
+				FA1247BC2EEFCED40015AB85 /* qlspectrumPreview */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +339,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FA1247A02EEFCD5D0015AB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA1247BB2EEFCED40015AB85 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +376,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA1247B92EEFCED40015AB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +395,11 @@
 			isa = PBXTargetDependency;
 			target = FA12478A2EEFCD5C0015AB85 /* qlspectrum */;
 			targetProxy = FA1247A32EEFCD5D0015AB85 /* PBXContainerItemProxy */;
+		};
+		FA1247CB2EEFCED40015AB85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA1247BC2EEFCED40015AB85 /* qlspectrumPreview */;
+			targetProxy = FA1247CA2EEFCED40015AB85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,6 +658,62 @@
 			};
 			name = Release;
 		};
+		FA1247CF2EEFCED40015AB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = qlspectrumPreview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = qlspectrumPreview;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.qlspectrum.qlspectrumPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA1247D02EEFCED40015AB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = qlspectrumPreview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = qlspectrumPreview;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alex.qlspectrum.qlspectrumPreview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +749,15 @@
 			buildConfigurations = (
 				FA1247B32EEFCD5D0015AB85 /* Debug */,
 				FA1247B42EEFCD5D0015AB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA1247CE2EEFCED40015AB85 /* Build configuration list for PBXNativeTarget "qlspectrumPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1247CF2EEFCED40015AB85 /* Debug */,
+				FA1247D02EEFCED40015AB85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
